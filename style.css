@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
 :root {
-    --bg-color: #d9b9f7;
-    --primary-color: #752aa7;
-    --secondary-color: #580999;
+    --bg-color: #414cb3;
+    --primary-color: #1e4aa9;
+    --secondary-color: #0e0e76;
     --tipo-fonte: "Fredoka", sans-serif;
 }
 
@@ -56,3 +56,10 @@ footer {
     height: 3rem;
     margin-top: 2rem;
 }
+
+ .graficos-container_texto {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--secundry-color) solid 2px;
+ }
