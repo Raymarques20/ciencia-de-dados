@@ -5,8 +5,8 @@ async function visualizarInformacoesGlobais() {
   const dados = res.json()
   const praticamRegularmente = (dados.total_pessoas_que_praticam_esportes_regularmente) / 1e9
   const pessoaNoMundo = (dados.total_pessoas_no_mundo / 1e9)
-  const horas = parseInt(dados.tempo_medio)
-  const minutos = Math.round(( dados.tempo-medio -horas) *100)
+  const horas = parseInt(dados.tempo_medio_semana_praticando_esportes)
+  const minutos = Math.round(( dados.tempo_medio_semana_praticando_esportes -horas) *100)
   const porcentagemConectada = ((praticamRegularmente  /  pessoaNoMundo) * 100).toFixed(2)
   const paragrafo = document.createElement('p')
   paragrafo.classList.add('graficos-container__texto')
